@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app id="WebApp_ID">
+	<display-name>PrivateLayerApplication</display-name>
+	<filter>
+        <filter-name>ParamFilter</filter-name>
+        <filter-class>com.citibank.ods.filter.ParamFilter</filter-class>
+        <init-param>
+            <param-name>fileUploadTempRepository</param-name>
+            <param-value>/apps/was/aplic/privatelayer</param-value>
+        </init-param>
+        <init-param>
+            <param-name>errorPage</param-name>
+            <param-value>/View/Error/System.jsp</param-value>
+        </init-param>                
+    </filter>
+	<filter>
+		<filter-name>ODSSecurityFilter</filter-name>
+		<filter-class>com.citibank.ods.common.security.ODSSecurityFilter</filter-class>
+	</filter>
+	<filter>
+	  <filter-name>ResponseOverrideFilter</filter-name>
+      <filter-class>org.displaytag.filter.ResponseOverrideFilter</filter-class> 
+    </filter>
+ 	<filter-mapping>
+		<filter-name>ParamFilter</filter-name>
+		<url-pattern>/FrontController/*</url-pattern>
+	</filter-mapping>     
+	
+	<filter-mapping>
+		<filter-name>ODSSecurityFilter</filter-name>
+		<url-pattern>/FrontController/*</url-pattern>
+	</filter-mapping>
+	
+	<filter-mapping>   
+        <filter-name>ResponseOverrideFilter</filter-name>   
+        <url-pattern>/FrontController/*</url-pattern>   
+    </filter-mapping>   
+    <filter-mapping>   
+      <filter-name>ResponseOverrideFilter</filter-name>   
+      <url-pattern>*.jsp</url-pattern>   
+    </filter-mapping>
+  
+
+	 <servlet>
+		<servlet-name>Bootstrap</servlet-name>
+		<display-name>Bootstrap</display-name>
+		<description></description>
+		<servlet-class>
+		com.citibank.ods.common.bootstrap.BootstrapServlet</servlet-class>
+		<init-param>
+			<param-name>application.configuration</param-name>
+			<param-value>ods</param-value>
+			<description></description>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>action</servlet-name>
+		<servlet-class>
+		org.apache.struts.action.ActionServlet</servlet-class>
+		<init-param>
+			<param-name>config</param-name>
+			<param-value>../../WEB-INF/struts-config.xml</param-value>
+		</init-param>
+		<init-param>
+			<param-name>debug</param-name>
+			<param-value>2</param-value>
+		</init-param>
+		<init-param>
+			<param-name>detail</param-name>
+			<param-value>2</param-value>
+		</init-param>
+		<init-param>
+			<param-name>validate</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+	<!--<servlet>
+		<servlet-name>TesteServlet</servlet-name>
+		<display-name>TesteServlet</display-name>
+		<description></description>
+		<servlet-class>com.citibank.ods.common.bootstrap.TesteServlet</servlet-class>
+	</servlet>-->
+	<servlet-mapping>
+		<servlet-name>Bootstrap</servlet-name>
+		<url-pattern>/Bootstrap</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>action</servlet-name>
+		<url-pattern>/FrontController/*</url-pattern>
+	</servlet-mapping>
+	<!--<servlet-mapping>
+		<servlet-name>TesteServlet</servlet-name>
+		<url-pattern>/TesteServlet</url-pattern>
+	</servlet-mapping>-->
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	<taglib>
+		<taglib-uri>/WEB-INF/struts-bean.tld</taglib-uri>
+		<taglib-location>/WEB-INF/struts-bean.tld</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>/WEB-INF/struts-html.tld</taglib-uri>
+		<taglib-location>/WEB-INF/struts-html.tld</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>/WEB-INF/struts-logic.tld</taglib-uri>
+		<taglib-location>/WEB-INF/struts-logic.tld</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>/WEB-INF/ods.tld</taglib-uri>
+		<taglib-location>/WEB-INF/ods.tld</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>/WEB-INF/struts-nested.tld</taglib-uri>
+		<taglib-location>/WEB-INF/struts-nested.tld</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>/WEB-INF/struts-template.tld</taglib-uri>
+		<taglib-location>/WEB-INF/struts-template.tld</taglib-location>
+	</taglib>
+	<taglib>
+		<taglib-uri>/WEB-INF/struts-tiles.tld</taglib-uri>
+		<taglib-location>/WEB-INF/struts-tiles.tld</taglib-location>
+	</taglib>
+	
+	<taglib>
+        	<taglib-uri>/WEB-INF/displaytag-11.tld</taglib-uri>
+        	<taglib-location>/WEB-INF/displaytag-11.tld</taglib-location>
+	</taglib>		
+
+<!--	<resource-ref id="ResourceRef_1169227031568">
+		<description></description>
+		<res-ref-name>jdbc/DSPrivateLayer</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+		<res-sharing-scope>Shareable</res-sharing-scope>
+	</resource-ref>
+-->
+
+      <resource-ref>
+	     <description>PCL Connection</description>
+	     <res-ref-name>jdbc/DSPrivateLayer</res-ref-name>
+	     <res-type>javax.sql.DataSource</res-type>
+	     <res-auth>Container</res-auth>
+      </resource-ref>
+      
+      <resource-env-ref>
+         <description>JTA Transaction manager</description>
+         <resource-env-ref-name>UserTransaction</resource-env-ref-name>
+         <resource-env-ref-type>javax.transaction.UserTransaction</resource-env-ref-type>
+      </resource-env-ref>
+	  
+	  <resource-env-ref>
+         <description>JTA Transaction Synchronization Registry</description>
+         <resource-env-ref-name>TransactionSynchronizationRegistry</resource-env-ref-name>
+         <resource-env-ref-type>javax.transaction.TransactionSynchronizationRegistry</resource-env-ref-type>
+      </resource-env-ref>      
+	       
+	  <env-entry>
+		<env-entry-name>pl.DEV.configuration.location</env-entry-name>
+		<env-entry-value>../../WEB-INF/classes/PL_DEV.configuration.properties</env-entry-value>
+		<env-entry-type>java.lang.String</env-entry-type>
+	  </env-entry>
+	
+	  <env-entry>
+	    <env-entry-name>pl.SIT.configuration.location</env-entry-name>
+	    <env-entry-value>/WEB-INF/classes/PL_SIT.configuration.properties</env-entry-value>
+	    <env-entry-type>java.lang.String</env-entry-type>
+	  </env-entry>
+	
+	  <env-entry>
+	    <env-entry-name>pl.UAT.configuration.location</env-entry-name>
+	    <env-entry-value>/WEB-INF/classes/PL_UAT.configuration.properties</env-entry-value>
+	    <env-entry-type>java.lang.String</env-entry-type>
+	  </env-entry>
+	
+	  <env-entry>
+	    <env-entry-name>pl.PRD.configuration.location</env-entry-name>
+	    <env-entry-value>/WEB-INF/classes/PL_PRD.configuration.properties</env-entry-value>
+	    <env-entry-type>java.lang.String</env-entry-type>
+	  </env-entry>
+
+</web-app>

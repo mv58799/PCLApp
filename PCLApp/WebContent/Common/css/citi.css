@@ -1,0 +1,2756 @@
+
+.fieldDiff{
+	border-color: red;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.ODS_ThemeOfficeMenu
+{
+	FONT: bold 11px verdana, arial, sans-serif;
+	color: #618DE0;
+	text-decoration:none;
+
+}
+
+
+.ODS_ThemeOfficeSubMenuTable
+{
+	FONT: bold 11px verdana, arial, sans-serif;
+	color: darkblue;
+
+	
+	padding:	0;
+
+	white-space:	nowrap;
+	cursor:	hand;
+}
+
+.ODS_ThemeOfficeSubMenu
+{
+	position:	absolute;
+	visibility:	hidden;
+	text-decoration:none;
+	/*
+	   Classes do menu principal.
+	*/
+	z-index:	100;
+	border:		0;
+	padding:	0;
+
+	overflow:	visible;
+	border:		1px solid #8C867B;
+
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#BDC3BD, Direction=135, Strength=4);
+}
+
+.ODS_ThemeOfficeSubMenuTable
+{
+	overflow:	visible;
+}
+
+.ODS_ThemeOfficeMainItem,.ODS_ThemeOfficeMainItemHover,.ODS_ThemeOfficeMainItemActive,
+.ODS_ThemeOfficeMenuItem,.ODS_ThemeOfficeMenuItemHover,.ODS_ThemeOfficeMenuItemActive
+{
+	border:		0;
+	cursor:		hand;
+	white-space:	nowrap;
+
+}
+
+.ODS_ThemeOfficeMainItem:ACTIVE
+{
+	background-color:	white;
+	color: darkgray;
+}
+
+
+.ODS_ThemeOfficeMainItemHover,.ODS_ThemeOfficeMainItemActive
+{
+	background-color:#C6D3EF;
+	color:darkblue;
+	FONT: bold 11px verdana, arial, sans-serif;
+}
+
+.ODS_ThemeOfficeMenuItem
+{
+	background-color:	WHITE;
+}
+
+.ODS_ThemeOfficeMenuItemHover,.ODS_ThemeOfficeMenuItemActive
+{
+	background-color:	#C6D3EF;
+}
+
+
+/* horizontal main menu */
+
+.ODS_ThemeOfficeMainItem
+{
+	padding:	1px;
+	border:		0;
+}
+
+td.ODS_ThemeOfficeMainItemHover,td.ODS_ThemeOfficeMainItemActive
+{
+	padding:	0px;
+	border:		1px solid #3169C6;
+}
+
+.ODS_ThemeOfficeMainFolderLeft,.ODS_ThemeOfficeMainItemLeft,
+.ODS_ThemeOfficeMainFolderText,.ODS_ThemeOfficeMainItemText,
+.ODS_ThemeOfficeMainFolderRight,.ODS_ThemeOfficeMainItemRight
+{
+	background-color:	inherit;
+
+}
+
+/* vertical main menu sub components */
+
+td.ODS_ThemeOfficeMainFolderLeft,td.ODS_ThemeOfficeMainItemLeft
+{
+	padding-top:	2px;
+	padding-bottom:	2px;
+	padding-left:	0px;
+	padding-right:	2px;
+
+	border-top:	1px solid #3169C6;
+	border-bottom:	1px solid #3169C6;
+	border-left:	1px solid #3169C6;
+
+	background-color:	inherit;
+}
+
+td.ODS_ThemeOfficeMainFolderText,td.ODS_ThemeOfficeMainItemText
+{
+	padding-top:	2px;
+	padding-bottom:	2px;
+	padding-left:	5px;
+	padding-right:	5px;
+
+	border-top:	1px solid #3169C6;
+	border-bottom:	1px solid #3169C6;
+
+	background-color:	inherit;
+	white-space:	nowrap;
+	td
+}
+
+td.ODS_ThemeOfficeMainFolderRight,td.ODS_ThemeOfficeMainItemRight
+{
+	padding-top:	2px;
+	padding-bottom:	2px;
+	padding-left:	0px;
+	padding-right:	0px;
+
+	border-top:	1px solid #3169C6;
+	border-bottom:	1px solid #3169C6;
+	border-right:	1px solid #3169C6;
+
+	background-color:	inherit;
+}
+
+tr.ODS_ThemeOfficeMainItem td.ODS_ThemeOfficeMainFolderLeft,
+tr.ODS_ThemeOfficeMainItem td.ODS_ThemeOfficeMainItemLeft
+{
+	padding-top:	3px;
+	padding-bottom:	3px;
+	padding-left:	1px;
+	padding-right:	2px;
+
+	white-space:	nowrap;
+
+	border:		0;
+	background-color:	inherit;
+}
+
+tr.ODS_ThemeOfficeMainItem td.ODS_ThemeOfficeMainFolderText,
+tr.ODS_ThemeOfficeMainItem td.ODS_ThemeOfficeMainItemText
+{
+	padding-top:	3px;
+	padding-bottom:	3px;
+	padding-left:	5px;
+	padding-right:	5px;
+
+	border:		0;
+	background-color:	inherit;
+}
+
+tr.ODS_ThemeOfficeMainItem td.ODS_ThemeOfficeMainItemRight,
+tr.ODS_ThemeOfficeMainItem td.ODS_ThemeOfficeMainFolderRight
+{
+	padding-top:	3px;
+	padding-bottom:	3px;
+	padding-left:	0px;
+	padding-right:	1px;
+
+	border:		0;
+	background-color:	inherit;
+}
+
+/* sub menu sub components */
+
+.ODS_ThemeOfficeMenuFolderLeft,.ODS_ThemeOfficeMenuItemLeft
+{
+	padding-top:	2px;
+	padding-bottom:	2px;
+	padding-left:	1px;
+	padding-right:	3px;
+
+	border-top:	1px solid #3169C6;
+	border-bottom:	1px solid #3169C6;
+	border-left:	1px solid #3169C6;
+
+	background-color:	inherit;
+	white-space:	nowrap;
+}
+
+.ODS_ThemeOfficeMenuFolderText,.ODS_ThemeOfficeMenuItemText
+{
+	padding-top:	2px;
+	padding-bottom:	2px;
+	padding-left:	5px;
+	padding-right:	5px;
+
+	border-top:	1px solid #3169C6;
+	border-bottom:	1px solid #3169C6;
+
+	background-color:	inherit;
+	white-space:	nowrap;
+}
+
+.ODS_ThemeOfficeMenuFolderRight,.ODS_ThemeOfficeMenuItemRight
+{
+	padding-top:	2px;
+	padding-bottom:	2px;
+	padding-left:	0px;
+	padding-right:	0px;
+
+	border-top:	1px solid #3169C6;
+	border-bottom:	1px solid #3169C6;
+	border-right:	1px solid #3169C6;
+
+	background-color:	inherit;
+	white-space:	nowrap;
+}
+
+.ODS_ThemeOfficeMenuItem .ODS_ThemeOfficeMenuFolderLeft,
+.ODS_ThemeOfficeMenuItem .ODS_ThemeOfficeMenuItemLeft
+{
+	padding-top:	3px;
+	padding-bottom:	3px;
+	padding-left:	2px;
+	padding-right:	3px;
+
+	white-space:	nowrap;
+
+	border:		0;
+	background-color:	#EFEFDE;
+}
+
+.ODS_ThemeOfficeMenuItem .ODS_ThemeOfficeMenuFolderText,
+.ODS_ThemeOfficeMenuItem .ODS_ThemeOfficeMenuItemText
+{
+	padding-top:	3px;
+	padding-bottom:	3px;
+	padding-left:	5px;
+	padding-right:	5px;
+
+	border:		0;
+	background-color:	inherit;
+}
+
+.ODS_ThemeOfficeMenuItem .ODS_ThemeOfficeMenuFolderRight,
+.ODS_ThemeOfficeMenuItem .ODS_ThemeOfficeMenuItemRight
+{
+	padding-top:	3px;
+	padding-bottom:	3px;
+	padding-left:	0px;
+	padding-right:	1px;
+
+	border:		0;
+	background-color:	inherit;
+}
+
+/* menu splits */
+
+.ODS_ThemeOfficeMenuSplit
+{
+	margin:		2px;
+	height:		1px;
+	overflow:	hidden;
+	background-color:	inherit;
+	border-top:	1px solid #C6C3BD;
+}
+
+/* image shadow animation */
+
+/*
+	seq1:	image for normal
+	seq2:	image for hover and active
+
+	To use, in the icon field, input the following:
+	<img class="seq1" src="normal.gif" /><img class="seq2" src="hover.gif" />
+*/
+
+.ODS_ThemeOfficeMenuItem img.seq1
+{
+	display:	inline;
+}
+
+.ODS_ThemeOfficeMenuItemHover seq2,
+.ODS_ThemeOfficeMenuItemActive seq2
+{
+	display:	inline;
+}
+
+.ODS_ThemeOfficeMenuItem .seq2,
+.ODS_ThemeOfficeMenuItemHover .seq1,
+.ODS_ThemeOfficeMenuItemActive .seq1
+{
+	display:	none;
+}
+
+/* ---------------------------------------------------------
+   --- 1 parameter sould be the Firefox formatting --------
+   ---------------------------------------------------------
+   --- 1 parametro deve ser para a formatacao do Firefox --
+   --------------------------------------------------------- */
+	/* -----------------------
+   --- Body --------------
+   -----------------------
+   --- Corpo da pagina ---
+   ----------------------- */
+BODY {
+	BACKGROUND-COLOR: white;
+	margin-top: 0;
+	margin-left: 10;
+}
+
+/* -----------------------------------
+   ------- Buttons (Fire Fox) -------- 
+   -----------------------------------
+   ------- Botoes (Fire Fox) ---------
+   -----------------------------------
+    */
+INPUT [type="button"],INPUT [type="submit"] {
+	BORDER-TOP: 1px solid #858585;
+	border-right: 1px solid #BEBEBE;
+	border-bottom: 1px solid #DCDCDC;
+	BORDER-LEFT: 1px solid #BEBEBE;
+	FONT: normal 10px verdana, arial, sans-serif;
+	COLOR: #0066cc;
+	MARGIN: 1px;
+	BACKGROUND: #FFFFFF;
+}
+
+li {
+	list-style-type: none;
+}
+
+/* -----------------------------------
+   --- Buttons (Internet Explorer) ---
+   ----------------------------------- 
+   --- Botoes (Internat Explorer) ----
+   ----------------------------------- */
+.button {
+	BORDER-TOP: 1px solid #858585;
+	border-right: 1px solid #BEBEBE;
+	border-bottom: 1px solid #DCDCDC;
+	BORDER-LEFT: 1px solid #BEBEBE;
+	FONT: normal 10px verdana, arial, sans-serif;
+	COLOR: #0066cc;
+	MARGIN: 1px;
+	BACKGROUND: #FFFFFF;
+}
+
+/* ----------------------------
+   -------- Formulario -------- 
+   ----------------------------
+   ----------- Form -----------
+   ---------------------------- */
+FORM {
+	display: inline;
+	margin: 0;
+}
+
+/* -------------------------
+   ------- Title H1 --------
+   -------------------------
+   ------- Titulo H1 -------
+   ------------------------- */
+H1 {
+	margin-top: 0px;
+	padding-left: 5px;
+	width: 985px;
+	font-size: 18px;
+	font-family: Verdana, Arial, sans-serif;
+	font-weight: normal;
+	color: #cc0000;
+	border-bottom: 1px solid #cccccc;
+}
+
+/* ---------------------------------
+   ----- Customer Data Division ----
+   --------------------------------- 
+   -- Divisao de Dados do Cliente --
+   --------------------------------- */
+#divCustomerData {
+	width: 985px;
+	border-bottom: 1px solid #cccccc;
+	FONT: bold 10px verdana, arial, sans-serif;
+	color: black;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	float: left;
+}
+
+/* ----------------------------
+   ----- Menu layout ----------
+   ----------------------------
+   --- Visualizacao do menu ---
+   ---------------------------- */
+#menu {
+	height: 35px;
+	width: 990px;
+	float: left;
+}
+
+/* --------------------------------------------
+   --- Object that contains a group of tabs ---
+   --------------------------------------------
+   --- Objecto que contem um grupo de abas ----
+   -------------------------------------------- */
+#container {
+	min-height: 500px;
+	_height: 500px;
+	width: 990px;
+	float: left;
+}
+
+/* -----------------------------------------------
+   --- Page's part that displays the operation ---
+   -----------------------------------------------
+   ---- Parte da pagina destinada a operacao -----
+   ----------------------------------------------- */
+#content {
+	float: left;
+	min-height: 500px;
+	_height: 500px;
+	width: 800px;
+	display: inline;
+	padding-left: 5px;
+	margin-top: 6px;
+}
+
+/* -----------------------
+   ----- Right Links -----
+   -----------------------
+   --- Links a Direita ---
+   ----------------------- */
+#rightSide {
+	float: right;
+	display: block;
+	width: 160px;
+	min-height: 500px;
+	_height: 500px;
+}
+
+/* -------------------------------
+   --------- Tab's space ---------
+   -------------------------------
+   --- Espaco ocupado pela aba ---
+   ------------------------------- */
+.internalWidth {
+	width: 720px;
+}
+
+/* -----------------------------------------
+   ----------- Half Tab's space ------------
+   -----------------------------------------
+   --- Metade do espaco ocupado pela aba ---
+   ----------------------------------------- */
+.halfInternalWidth {
+	width: 355px;
+}
+
+/* -----------------------------------------
+   ----------- 1/3 Tab's space ------------
+   -----------------------------------------
+   --- 1/3 do espaco ocupado pela aba ---
+   ----------------------------------------- */
+.internalWidth1-3 {
+	width: 240px;
+}
+
+/* -----------------------------------------------------------
+   ---- Information's position displayed in Greeting page ----
+   -----------------------------------------------------------
+   --- Posicao da informacao exibida na pagina do Greeting ---
+   ----------------------------------------------------------- */
+#loginInformation {
+	position: absolute;
+	top: 101px;
+	left: 705px;
+	width: 100px;
+	height: 100px;
+}
+
+/* ---------------------------------------------------------------------
+   --- Blue/white degrade detail displayed in the top of application ---
+   ---------------------------------------------------------------------
+   ------- Detalhe azul/branco degrade exibido acima da aplicacao ------
+   --------------------------------------------------------------------- */
+#top_1 {
+	background-image: url(../images/36wav.gif);
+	background-repeat: repeat-x;
+	height: 35px;
+	width: 990px;
+}
+
+/* -------------------------------------------------------------------
+   ------------ Begin, Clean and Finish's part in the page -----------
+   -------------------------------------------------------------------
+   --- Parte onde sao exibidos os links Inincio, Limpar e Encerrar ---
+   ------------------------------------------------------------------- */
+#top_2 {
+	width: 990px;
+	height: 43px;
+}
+
+/* --------------
+   --- Rodape ---
+   -------------- 
+   --- Footer ---
+   -------------- */
+#footer {
+	font: normal 10px verdana, arial, sans-serif;
+	color: #0065CE;
+	border-top: 1px solid #cccccc;
+	width: 990px;
+	margin-top: 5px;
+	float: left;
+}
+
+/* ---------------------------------
+   --- Logo's footer position ------
+   ---------------------------------
+   --- Posicao do logo no rodape ---
+   --------------------------------- */
+#footerLeft {
+	text-align: left;
+	float: left;
+}
+
+/* ------------------------------------------------
+   --- Footer's position of links and copyright ---
+   ------------------------------------------------
+   --- Posicao dos links e copyright no rodape ----
+   ------------------------------------------------ */
+#footerRight {
+	text-align: right;
+	float: right;
+}
+
+/* ------------------------------------
+   --- Header's logo position ---------
+   ------------------------------------
+   --- Posicao do logo no cabecalho ---
+   ------------------------------------ */
+#logo {
+	position: absolute;
+	left: 0px;
+	top: 34px
+}
+
+/* ---------------------------------------------------
+   ---- Mutual Fund's menu place in the greeting -----
+   ---------------------------------------------------
+   --- Parte do greeting onde esta o Fundos Mutuos ---
+   --------------------------------------------------- */
+#divMutualFundsSelects {
+	position: absolute;
+	left: 140px;
+	top: 275px !important;
+	top: 313px;
+}
+
+/* ---------------------------------------------
+   --- Product's menu place in the greeting ----
+   ---------------------------------------------
+   --- Parte do greeting onde esta o Produto ---
+   --------------------------------------------- */
+#divProductsSelects {
+	position: absolute;
+	left: 140px;
+	top: 255px !important;
+	top: 288px;
+}
+
+/* --------------------------------------------------
+   ------- Label for input and output filds ---------
+   --------------------------------------------------
+   ------ Nome dos campos de entrada e saida --------
+   -------------------------------------------------- */
+.fixed {
+	MARGIN: 0px;
+	PADDING: 0px;
+	FONT: normal 10px verdana, arial, sans-serif;
+	COLOR: #0066cc;
+}
+
+/* ----------------------------------------------------------------------
+   ---------- Label for input and output filds aligned left -------------
+   ----------------------------------------------------------------------
+   ------ Nome dos campos de entrada e saida alinhado a esquerda --------
+   ---------------------------------------------------------------------- */
+.fixedLeft {
+	MARGIN: 0px;
+	PADDING: 0px;
+	FONT: normal 10px verdana, arial, sans-serif;
+	COLOR: #0066cc;
+	text-align: left;
+}
+
+/* ------------------------------------------------------
+   ------ Text format displayed down the subtitles ------
+   ------------------------------------------------------
+   --- Formato do texto exibido abaido dos subtitulos ---
+   ------------------------------------------------------ */
+.informative {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 8.5pt;
+}
+
+/* -----------------------------------------------------
+   --------- Variables format displayed values ---------
+   -----------------------------------------------------
+   --- Formato que sao exibidos valores de variaveis ---
+   ----------------------------------------------------- */
+.variable {
+	BACKGROUND-COLOR: #eeeeee;
+	MARGIN: 0px;
+	PADDING: 0px;
+	FONT: normal 10px verdana, arial, sans-serif;
+	COLOR: #000000;
+	height: 13px;
+}
+
+/* --------------------------------------------------------------------------------------
+   ----- Mutual Funds Class for using with Fire Fox case redemption or subscription -----
+   --------------------------------------------------------------------------------------
+   --- Classe a ser utilizada em Fundos Mutuos para resgate ou aplicacao, com Firefox ---
+   -------------------------------------------------------------------------------------- */
+.variableLines {
+	BACKGROUND-COLOR: #eeeeee;
+	MARGIN: 0px;
+	PADDING: 0px;
+	FONT: normal 10px verdana, arial, sans-serif;
+	COLOR: #000000;
+	height: 13px important;
+}
+
+/* -----------------------
+   ---- Error format -----
+   -----------------------
+   --- Formato de Erro ---
+   ----------------------- */
+.error {
+	font-size: 11px;
+	font-weight: bold;
+	FONT-FAMILY: verdana, arial, sans-serif;
+	color: red;
+}
+
+/* -----------------------------------------------------------------------
+   ----- formato de atencao para menssagens exibidas de solicitacoes -----
+   -----------------------------------------------------------------------
+   --- Attention format to messages displayed as responses of requests ---
+   ----------------------------------------------------------------------- */
+.attention {
+	background: url(../images/atencaoPequeno.jpg) no-repeat;
+	background-position: 0px -5px;
+	font-size: 15px;
+	font-weight: bold;
+	text-decoration: underline;
+	text-align: left;
+	font-family: verdana, arial, sans-serif;
+	color: red;
+	padding-left: 32px;
+}
+
+/* ------------------------
+   ------- Red Bold -------
+   ------------------------
+   --- Negrito Vermelho ---
+   ------------------------ */
+.redBold {
+	COLOR: #FF0000;
+	FONT: bold 10px verdana, arial, sans-serif;
+}
+
+/* ---------------------------
+   --- Azul Escuro Negrito ---
+   ---------------------------
+   ----- Dark Blue Bold ------
+   --------------------------- */
+A.darkBlueBold {
+	color: #070754;
+	FONT: bold 10px verdana, arial, sans-serif;
+}
+
+/* ------------
+   --- Gray ---
+   ------------
+   --- Cinza --
+   ------------ */
+.gray {
+	COLOR: gray;
+	FONT: 10px verdana, arial, sans-serif;
+}
+
+/* -------------
+   --- Black ---
+   -------------
+   --- Preto ---
+   ------------- */
+.black {
+	COLOR: #000000;
+	FONT: 10px verdana, arial, sans-serif;
+}
+
+/* ----------------
+   ----- Red ------
+   ----------------
+   --- Vermelho ---
+   ---------------- */
+.red {
+	COLOR: #FF0000;
+	FONT: 10px verdana, arial, sans-serif;
+}
+
+/* ---------------------
+   ----- Black Bold ----
+   ---------------------
+   --- Preto Negrito ---
+   --------------------- */
+.blackBold {
+	COLOR: #000000;
+	FONT: bold 10px verdana, arial, sans-serif;
+}
+
+/* ---------------------------------------
+   --- Font black color to combo itens ---
+   ---------------------------------------
+   --- Cor preta de fonte para combos ----
+   ---------------------------------------*/
+.boldBlackSelect {
+	COLOR: #000000;
+	FONT: bold 10px verdana, arial, sans-serif;
+}
+
+/* ------------------------------------------
+   ----- Font red color to combo itens ------
+   ------------------------------------------
+   --- Cor vermelha de fonte para combos ----
+   ------------------------------------------*/
+.boldRedSelect {
+	COLOR: #CC0000;
+	FONT: bold 10px verdana, arial, sans-serif;
+}
+
+/* --------------------------------------
+   ----- Font red style to messages ----- 
+   --------------------------------------
+   --- Estilo vermelho para mensagens ---
+   --------------------------------------*/
+.redMessage {
+	font: bold 12px verdana, arial, sans-serif;
+	color: red;
+}
+
+/* --------------------------------------
+   ----- Font gray style to messages ---- 
+   --------------------------------------
+   ---- Estilo cinza para mensagens -----
+   --------------------------------------*/
+.grayMessage {
+	font: bold 12px verdana, arial, sans-serif;
+	color: #555555;
+}
+
+/* -----------------------------------
+   ------------ Alignment ------------
+   -----------------------------------
+   ----------- Alinhamento -----------
+   -----------------------------------  */ /* -------------------
+   --- Centralized ---
+   -------------------
+   --- Centralizado --
+   ------------------- */
+.centralized {
+	TEXT-ALIGN: center;
+}
+
+/* -------------------
+   ---- justified ----
+   -------------------
+   --- Justificado ---
+   ------------------- */
+.justified {
+	TEXT-ALIGN: justify;
+}
+
+/* ---------------------------------
+   --------- Aligned left ----------
+   ---------------------------------
+   ------ Alinhado a esquerda ------
+   ---------------------------------  */
+.alignLeft {
+	TEXT-ALIGN: left;
+}
+
+/* ---------------------------------
+   -------- Aligned right ----------
+   ---------------------------------
+   ------ Alinhado a direita -------
+   ---------------------------------  */
+.alignRight {
+	TEXT-ALIGN: right;
+}
+
+/* ---------------------------------
+   -------- Padding right ----------
+   ---------------------------------
+   ------- Exibido a direita -------
+   ---------------------------------  */
+.paddingLeft {
+	padding-left: 5px;
+}
+
+/* ----------------------------------
+   ----------- Subtitles ------------
+   ----------------------------------
+   ----------- Subtitulos -----------
+   ---------------------------------- */
+TH.subtitle {
+	BACKGROUND: url(../images/subMenu.gif) no-repeat;
+	background-position: 0px 10px;
+	COLOR: #555555;
+	font-weight: bold;
+	font-size: 13px;
+	font-family: verdana, arial, sans-serif;
+	TEXT-ALIGN: left;
+	BORDER-BOTTOM: 1px dashed #cccccc;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+/* --------------------------------------------
+   ---- Right links displayed in the pages ----
+   --------------------------------------------
+   ---- Links exibidos a direita da pagina ----
+   -------------------------------------------- */
+TR.linkRight TD {
+	background: url(../images/arrow2.gif) no-repeat;
+	background-position: 0px 2px;
+	height: 19px !important;
+	height: 17px;
+	color: #555555;
+	font: 13px Verdana, arial, sans-serif;
+	text-align: left;
+	line-height: 14px;
+	BORDER-BOTTOM: 1px dashed #cccccc;
+	MARGIN-BOTTOM: 5px;
+	padding-left: 13px;
+}
+
+/* -----------------------------------------
+   --- Tansaction select option standard ---
+   -----------------------------------------
+   ----- Padrao do combo de transacoes -----
+   ----------------------------------------- */
+TR.linkRight A,TR.linkRight A:visited {
+	COLOR: #0066cc;
+	FONT: 11px Verdana, sans-serif;
+	text-align: left;
+	vertical-align: top;
+	text-decoration: none;
+}
+
+/* ---------------------------------------------------------------
+   ------ Right links displayed in the pages with cursor on ------
+   ---------------------------------------------------------------
+   ----  Links exibidos a direita da pagina com cursor em cima ---
+   --------------------------------------------------------------- */
+TR.linkRight A:hover {
+	COLOR: #3399CC;
+}
+
+/* --------------------------------
+   ------ Right link symbols ------
+   --------------------------------
+   -------  Simbolo dos inks ------
+   -------------------------------- */
+TR.linkRightDark TD {
+	BACKGROUND: url(../images/arrow2.gif) no-repeat;
+	background-position: 0px 2px;
+	height: 19px !important;
+	height: 17px;
+	COLOR: #555555;
+	FONT: 13px Verdana, arial, sans-serif;
+	TEXT-ALIGN: left;
+	line-height: 14px;
+	BORDER-BOTTOM: 1px dashed #cccccc;
+	MARGIN-BOTTOM: 5px;
+	padding-left: 13px;
+}
+
+/* --------------------------------------------------------------------------
+   ------ Right links displayed in the pages to main frame navigations ------
+   --------------------------------------------------------------------------
+   ----  Links exibidos a direita da pagina para navegacoes do main frame ---
+   -------------------------------------------------------------------------- */
+TR.linkRightDark A,TR.linkRightDark A:visited {
+	COLOR: #070754;
+	FONT: 11px "Trebuchet MS", Verdana, sans-serif;
+	TEXT-ALIGN: left;
+	FONT-WEIGHT: bold;
+	vertical-align: top;
+	text-decoration: none;
+}
+
+/* -----------------------------------------------------------------------------
+   ----- Flag Link displayed in the Cor page-----------------------------------	
+   ----- Link para Tela Flag mostrado na pagina Cor----------------------------*/
+.flagLink {
+	color: red;
+	text-decoration: none;
+	}
+
+/* na página de inserir documentos, é escondida a última coluna do grid(hasDoc) 
+#gridTable th:nth-child(6){
+  	display:none;
+}
+
+.hiddenColHasDoc{
+	display:none;
+}*/
+
+/* -----------------------------------------------------------------------------------------
+   ------ Right links displayed in the pages to main frame navigations with cursor on ------
+   -----------------------------------------------------------------------------------------
+   ----  Links exibidos a direita de navegacoes main frame da pagina com cursor em cima ----
+   ----------------------------------------------------------------------------------------- */
+TR.linkRightDark A:hover {
+	COLOR: #3399CC;
+}
+
+/* --------------------------------------
+   --- Light line displayed in tables ---
+   --------------------------------------
+   --- Linha clara exibida em tabelas ---
+   -------------------------------------- */
+TR.line1 TD {
+	BACKGROUND-COLOR: #ffffff;
+	COLOR: #000000;
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 10px;
+	FONT-FAMILY: verdana, arial, sans-serif;
+}
+
+/* --------------------------------------
+   --- Dark line displayed in tables ----
+   --------------------------------------
+   --- Linha escura exibida em tabelas --
+   -------------------------------------- */
+TR.line2 TD {
+	background-color: #f3f2f1;
+	color: #000000;
+	font-weight: normal;
+	font-size: 10px;
+	font-family: verdana, arial, sans-serif;
+	padding: 0px;	
+}
+
+/* --------------------------------------
+   ---- Light line displayed in links ---
+   --------------------------------------
+   --- Linha clara exibida em links -----
+   -------------------------------------- */
+TR.line1 A {
+	COLOR: #000000;
+	TEXT-DECORATION: none;
+	font-size: 10px;
+}
+
+/* --------------------------------------
+   ---- Dark line displayed in links ----
+   --------------------------------------
+   --- Linha escura exibida em links ----
+   -------------------------------------- */
+TR.line2 A {
+	COLOR: #000000;
+	TEXT-DECORATION: none;
+	font-size: 10px;
+}
+
+/* ----------------------------------------
+   ----- Header columns on the tables -----
+   ----------------------------------------
+   --- Cabecalho de colunas nas tabelas ---
+   ---------------------------------------- */
+TH.header {
+	COLOR: #FFFFFF;
+	FONT: normal 10px verdana, arial, sans-serif;
+	BACKGROUND: #FFFFFF url(../image/cabecTable.gif) repeat-x;
+	TEXT-ALIGN: center;
+}
+
+/* ------------------------------------------------------------
+   --------- Header columns on the tables aligned left --------
+   ------------------------------------------------------------
+   --- Cabecalho de colunas nas tabelas alinhado a esquerda ---
+   ------------------------------------------------------------ */
+TH.headerLeft {
+	COLOR: #FFFFFF;
+	FONT: normal 10px verdana, arial, sans-serif;
+	BACKGROUND: #FFFFFF url(../images/cabecTable.gif) repeat-x;
+	TEXT-ALIGN: left;
+}
+
+/* --------------------------------------
+   --- Header columns on the tables -----
+   --------------------------------------
+   --- Cabecalho de colunas nos grids ---
+   -------------------------------------- */
+.gridHeader {
+	COLOR: #FFFFFF;
+	FONT: normal 10px verdana, arial, sans-serif;
+	BACKGROUND: #FFFFFF url(../images/cabecTable.gif) repeat-x;
+	TEXT-ALIGN: center;
+	width: 100%;
+	border-right: 1.5px #5693c1;
+	border-left: 1.5px #5693c1;
+}
+
+/* ----------------------
+   ----- align top ------
+   ----------------------
+   --- alinhado acima ---
+   ---------------------- */
+.top {
+	vertical-align: top;
+}
+
+/* -------------------------------------------------
+   ------ Header column links on the tables --------
+   -------------------------------------------------
+   --- Link em cabecalhos de colunas nas tabelas ---
+   ------------------------------------------------- */
+TH.header A:link,TH.header A:visited,TH.header A:hover {
+	COLOR: white;
+	text-decoration: none;
+}
+
+/* ---------------------
+   --- heigth 320px ----
+   ---------------------
+   --- altura 320px ----
+   --------------------- */
+.heigth {
+	height: 320px;
+}
+
+/* -------------------------------------------------------------------------------------------
+   --- The styles below, from type "TD.length", are used to define the width of the columns --
+   --- displayed in the table's columns ------------------------------------------------------
+   -------------------------------------------------------------------------------------------
+   --- Os estilos criados a seguir, do tipo "TD.length", sao usados para definir a largura ---
+   --- das colunas das tabelas ---------------------------------------------------------------
+   ------------------------------------------------------------------------------------------- */
+	/* -------------------------------
+   --- 100% of the tab's width ---
+   -------------------------------
+   --- 100% da largura da aba ----
+   ------------------------------- */
+TD.length1 {
+	min-width: 720px;
+	max-width: 720px;
+	width: 720px;
+}
+
+/* -------------------------------
+   --- 75% of the tab's width ----
+   -------------------------------
+   --- 75% da largura da aba -----
+   ------------------------------- */
+TD.length4-3 {
+	min-width: 540px;
+	max-width: 540px;
+	width: 540px;
+}
+
+/* ---------------------------------
+   --- 66,7% of the tab's width ----
+   ---------------------------------
+   --- 66,7% da largura da aba -----
+   --------------------------------- */
+TD.length3-2 {
+	min-width: 480px;
+	max-width: 480px;
+	width: 480px;
+}
+
+/* -------------------------------
+   --- 50% of the tab's width ----
+   -------------------------------
+   --- 50% da largura da aba -----
+   ------------------------------- */
+TD.length2 {
+	min-width: 360px;
+	max-width: 360px;
+	width: 360px;
+}
+
+TD.length2Centralized {
+	min-width: 360px;
+	max-width: 360px;
+	width: 360px;
+	text-align: center;
+}
+
+/* ---------------------------------
+   --- 33,3% of the tab's width ----
+   ---------------------------------
+   --- 33,3% da largura da aba -----
+   --------------------------------- */
+TD.length3 {
+	min-width: 240px;
+	max-width: 240px;
+	width: 240px;
+}
+
+TD.length3Centralized {
+	min-width: 240px;
+	max-width: 240px;
+	width: 240px;
+	text-align: center;
+}
+
+/* -------------------------------
+   --- 25% of the tab's width ----
+   -------------------------------
+   --- 25% da largura da aba -----
+   ------------------------------- */
+TD.length4 {
+	min-width: 180px;
+	max-width: 180px;
+	width: 180px;
+}
+
+TD.length4Centralized {
+	min-width: 180px;
+	max-width: 180px;
+	width: 180px;
+	text-align: center;
+}
+
+/* --------------------------------------------------------------
+   --- Alignment to right with 25% of the tab's width ---------
+   --------------------------------------------------------------
+   --- Alinhamento para a direita com 25% da largura da aba ---
+   -------------------------------------------------------------- */
+TD.length4AlignRight {
+	min-width: 180px;
+	max-width: 180px;
+	width: 180px;
+	text-align: right;
+}
+
+/* -------------------------------
+   --- 20% of the tab's width ----
+   -------------------------------
+   --- 20% da largura da aba -----
+   ------------------------------- */
+TD.length5 {
+	min-width: 144px;
+	max-width: 144px;
+	width: 144px;
+}
+
+/* -------------------------------
+   --- 80% of the tab's width ----
+   -------------------------------
+   --- 80% da largura da aba -----
+   ------------------------------- */
+TD.length5-4 {
+	min-width: 576px;
+	max-width: 576px;
+	width: 576px;
+}
+
+/* ---------------------------------
+   --- 16,7% of the tab's width ----
+   ---------------------------------
+   --- 16,7% da largura da aba -----
+   --------------------------------- */
+TD.length6 {
+	min-width: 120px;
+	max-width: 120px;
+	width: 120px;
+}
+
+TD.length6Centralized {
+	min-width: 120px;
+	max-width: 120px;
+	width: 120px;
+	text-align: center;
+}
+
+TD.length108 {
+	min-width: 108px;
+	max-width: 108px;
+	width: 108px;
+}
+
+/* ---------------------------------
+   --- 14,3% of the tab's width ----
+   ---------------------------------
+   --- 14,3% da largura da aba -----
+   --------------------------------- */
+TD.length7 {
+	min-width: 102.85px;
+	max-width: 102.85px;
+	width: 102.85px;
+}
+
+/* ---------------------------------
+   --- 12,5% of the tab's width ----
+   ---------------------------------
+   --- 12,5% da largura da aba -----
+   --------------------------------- */
+TD.length8 {
+	min-width: 90px;
+	max-width: 90px;
+	width: 90px;
+}
+
+TD.length8Centralized {
+	min-width: 90px;
+	max-width: 90px;
+	width: 90px;
+	text-align: center;
+}
+
+/* ---------------------------------
+   --- 11,1% of the tab's width ----
+   ---------------------------------
+   --- 11,1% da largura da aba -----
+   --------------------------------- */
+TD.length9 {
+	min-width: 80px;
+	max-width: 80px;
+	width: 80px;
+}
+
+TD.length10-2 {
+	min-width: 58px;
+	max-width: 58px;
+	width: 58px;
+}
+
+TD.length9-10 {
+	min-width: 648px;
+	max-width: 648px;
+	width: 648px;
+}
+
+/* -------------------------------
+   --- 10% of the tab's width ----
+   -------------------------------
+   --- 10% da largura da aba -----
+   ------------------------------- */
+TD.length10 {
+	min-width: 72px;
+	max-width: 72px;
+	width: 72px;
+}
+
+TD.length10Centralized {
+	min-width: 72px;
+	max-width: 72px;
+	width: 72px;
+	text-align: center;
+}
+
+/* --------------------------------------------------------------
+   --- Alignment to right with 10% of the tab's width ---------
+   --------------------------------------------------------------
+   --- Alinhamento para a direita com 10% da largura da aba ---
+   -------------------------------------------------------------- */
+TD.length10AlignRight {
+	min-width: 72px;
+	max-width: 72px;
+	width: 72px;
+	text-align: right;
+}
+
+/* -------------------------------
+   --- 9,03% of the tab's width ----
+   -------------------------------
+   --- 9,03% da largura da aba -----
+   ------------------------------- */
+TD.length11 {
+	min-width: 65px;
+	max-width: 65px;
+	width: 65px;
+}
+
+TD.length11Centralized {
+	min-width: 65px;
+	max-width: 65px;
+	width: 65px;
+	text-align: center;
+}
+
+TD.length12Centralized {
+	min-width: 20px;
+	max-width: 20px;
+	width: 20px;
+	text-align: center;
+}
+
+/* -------------------------------
+   --- 8,33% of the tab's width ----
+   -------------------------------
+   --- 8,33% da largura da aba -----
+   ------------------------------- */
+TD.length12 {
+	min-width: 60px;
+	max-width: 60px;
+	width: 60px;
+}
+
+/* ---------------------------------
+   --- 41,4% of the tab's width ----
+   ---------------------------------
+   --- 41,4% da largura da aba -----
+   --------------------------------- */
+TD.length5-2 {
+	min-width: 298px;
+	max-width: 298px;
+	width: 298px;
+}
+
+/* -------------------------------
+   --- 40% of the tab's width ----
+   -------------------------------
+   --- 40% da largura da aba -----
+   ------------------------------- */
+TD.length5-2N {
+	min-width: 288px;
+	max-width: 288px;
+	width: 288px;
+}
+
+/* -------------------------------------------------------------------------------------------
+   ---------------------------- The end of columns styles ------------------------------------
+   -------------------------------------------------------------------------------------------
+   ---------------------------- Fim dos estilos de colunas -----------------------------------
+   ------------------------------------------------------------------------------------------- */
+	/* --------------------------------------------------------------
+   --- Alignment to right with 33,3% of the tab's width ---------
+   --------------------------------------------------------------
+   --- Alinhamento para a direita com 33,3% da largura da aba ---
+   -------------------------------------------------------------- */
+.alignRightLenght3 {
+	TEXT-ALIGN: right;
+	min-width: 240px;
+	max-width: 240px;
+	width: 240px;
+}
+
+/* --------------------------------------------------------------
+   --- Alignment to right with 12,5% of the tab's width ---------
+   --------------------------------------------------------------
+   --- Alinhamento para a direita com 12,5% da largura da aba ---
+   -------------------------------------------------------------- */
+.alignRightLenght8 {
+	TEXT-ALIGN: right;
+	min-width: 90px;
+	max-width: 90px;
+	width: 90px;
+}
+
+/* ------------------------------------------------------------
+   --- Alignment to right with 20% of the tab's width ---------
+   ------------------------------------------------------------
+   --- Alinhamento para a direita com 20% da largura da aba ---
+   ------------------------------------------------------------ */
+TD.centralizedLength5 {
+	TEXT-ALIGN: center;
+	min-width: 144px;
+	max-width: 144px;
+	width: 144px;
+}
+
+/* --------------------------------------------------------------
+   --- Alignment to right with 16,7% of the tab's width ---------
+   --------------------------------------------------------------
+   --- Alinhamento para a direita com 16,7% da largura da aba ---
+   -------------------------------------------------------------- */
+TD.centralizedLength6 {
+	TEXT-ALIGN: center;
+	min-width: 120px;
+	max-width: 120px;
+	width: 120px;
+}
+
+/* --------------------------------------------------------------
+   --- Alignment to right with 16,7% of the tab's width ---------
+   --------------------------------------------------------------
+   --- Alinhamento para a direita com 16,7% da largura da aba ---
+   -------------------------------------------------------------- */
+TD.length6AlignRight {
+	TEXT-ALIGN: right;
+	min-width: 120px;
+	max-width: 120px;
+	width: 120px;
+}
+
+/* -------------------------------
+   --- Alignment to center with 8,33% of the tab's width ----
+   -------------------------------
+   --- Alinhamento para o centro com 8,33% da largura da aba -----
+   ------------------------------- */
+TD.length12Centralized {
+	min-width: 60px;
+	max-width: 60px;
+	width: 60px;
+	TEXT-ALIGN: center;
+}
+
+/* ------------------------------------------
+   --- Colunas para Alinhar Nova Pesquisa ---
+   ------------------------------------------ 
+   ---- Columns for New Search Alignment ----
+   ------------------------------------------ */
+	/* --------------------------------------------------
+   --- New Search's alignment for Column 1 ----------
+   --------------------------------------------------
+   --- Alinhamento pata coluna 1 da Nova Pesquisa ---
+   -------------------------------------------------- */
+TD.newSearchColumn1 {
+	width: 30px;
+	text-align: left;
+}
+
+/* --------------------------------------------------
+   --- New Search's alignment for Column 2 ----------
+   --------------------------------------------------
+   --- Alinhamento pata coluna 2 da Nova Pesquisa ---
+   -------------------------------------------------- */
+TD.newSearchColumn2 {
+	width: 140px;
+	text-align: left;
+}
+
+/* --------------------------------------------------
+   --- New Search's alignment for Column 3 ----------
+   --------------------------------------------------
+   --- Alinhamento pata coluna 3 da Nova Pesquisa ---
+   -------------------------------------------------- */
+TD.newSearchColumn3 {
+	width: 68px;
+	text-align: left;
+}
+
+/* --------------------------------------------------
+   --- New Search's alignment for Column 4 ----------
+   --------------------------------------------------
+   --- Alinhamento pata coluna 4 da Nova Pesquisa ---
+   -------------------------------------------------- */
+TD.newSearchColumn4 {
+	width: 100px;
+	text-align: left;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!! NaO ENCONTRADO NA APLICAcaO !!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.popup {
+	COLOR: black;
+	font-size: 11px;
+	font-family: Verdana, Arial, sans-serif;
+	TEXT-ALIGN: left;
+	vertical-align: top;
+	background-color: #EEEEEE;
+	border: 1px;
+	border-style: solid;
+	border-color: #CCCCCC;
+}
+
+/* ------------------------------------------------------------------------
+   --- Format Input Text Field for components inputText and listBox -------
+   ------------------------------------------------------------------------
+   --- Formato de compos de entrada dos componentes inputText e listBox ---
+   ------------------------------------------------------------------------ */
+input,textarea,select {
+	BORDER-TOP: 1px solid #858585;
+	border-right: 1px solid #BEBEBE;
+	border-bottom: 1px solid #DCDCDC;
+	BORDER-LEFT: 1px solid #BEBEBE;
+	BACKGROUND: #fff url(../images/input_image.gif) repeat-x;
+	FONT: normal 10px verdana, arial, sans-serif;
+	COLOR: black;
+	MARGIN: 1px;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+   !!! NaO ENCONTRADO NA APLICAcaO !!!
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.disabled {
+	background: #F3F2F1;
+}
+
+/* -------------------------------------
+   --- Checkbox component standard -----
+   -------------------------------------
+   --- Padrao do componente Chackbox ---
+   ------------------------------------- */
+.checkBox {
+	BORDER: none;
+	BACKGROUND: none;
+}
+
+/* ----------------------------------
+   --- Radio component standard -----
+   ----------------------------------
+   --- Padrao do componente Radio ---
+   ---------------------------------- */
+.radio {
+	BORDER: none;
+	BACKGROUND: none;
+	FONT: normal 10px verdana, arial, sans-serif;
+}
+
+/* -----------------------------------
+   --- Link text standard ------------
+   -----------------------------------
+   --- Padrao dos textos dos links ---
+   ----------------------------------- */
+A {
+	text-decoration: blink;
+}
+
+/* -----------------------------------
+   --- Link color standard -----------
+   -----------------------------------
+   --- Padrao das cores dos links ----
+   ----------------------------------- */
+A:link,A:visited {
+	COLOR: #003399;
+}
+
+/* ----------------------------------------------------------------
+   --- Link color standard whith mouse's cursor hover -------------
+   ----------------------------------------------------------------
+   --- Padrao das cores dos links com o cursor do mouse em cima ---
+   ---------------------------------------------------------------- */
+A:hover {
+	COLOR: #3399CC;
+}
+
+/* ------------------------------------------
+   --- Page Header - Good Morning Message ---
+   ------------------------------------------
+   ---- Cabecalho - Mensagem de Bom Dia  ----
+   ------------------------------------------ */
+#divWelcomeUser {
+	position: absolute;
+	text-align: right;
+	top: 43px !important;
+	top: 39px;
+	left: 475px;
+	FONT: bold 8.5pt verdana;
+	width: 350px;
+	COLOR: gray;
+}
+
+/* --------------------
+   --- Localization ---
+   --------------------
+   --- Localizacao ----
+   -------------------- */
+#divLocalization {
+	position: absolute;
+	text-align: right;
+	top: 59px;
+	left: 400px;
+	width: 590px;
+	FONT: bold 8.5pt verdana;
+	color: gray;
+}
+
+/* -----------------------------------------------------------
+   --- Finish, clean and begin list format links -------------
+   -----------------------------------------------------------
+   --- formato da lista de links encerrar, limpar e Inicio ---
+   ----------------------------------------------------------- */
+#pnlNavTop ul li {
+	list-style-type: none;
+	float: right;
+	padding: 4px;
+}
+
+/* -------------------------------------------------------------------------------------------
+   --- Links(inish, clean and begin), welcome message, user name and date - font format ------
+   -------------------------------------------------------------------------------------------
+   --- Formato da fonte dos links (encerrar, limpar e inicio), da mensagem de boas vindas, ---
+   --- do nome do usuario e da data ----------------------------------------------------------
+   ------------------------------------------------------------------------------------------- */
+#pnlNavTop A {
+	FONT: bold 12px verdana, arial, sans-serif;
+	text-decoration: underline;
+}
+
+/* ---------------------------------------------------------------
+   --- Finish, clean and begin Links disabled style --------------
+   ---------------------------------------------------------------
+   --- Estilo desabilitado dos links Encerrar, limpar e inicio ---
+   --------------------------------------------------------------- */
+#pnlNavTop A:link,A:visited {
+	COLOR: #003399;
+}
+
+/* ----------------------------------------------------------------------------
+   --- Finish, clean and begin color links with mouse hover -------------------
+   ----------------------------------------------------------------------------
+   --- Cor dos links encerrar, limpar e inicio quando com o cursor do mouse ---
+   ---------------------------------------------------------------------------- */
+#pnlNavTop A:hover {
+	COLOR: #3399CC;
+}
+
+/* ---------------------------------------------------------------
+   --- Finish, clean and begin Links disabled style --------------
+   ---------------------------------------------------------------
+   --- Estilo desabilitado dos links Encerrar, limpar e inicio ---
+   --------------------------------------------------------------- */
+.navigationDisabled {
+	COLOR: gray;
+	FONT: bold 8.5pt verdana, arial, sans-serif;
+}
+
+/* ----------------------------------------------------------
+   --- Finish, clean and begin Links positioning ------------
+   ----------------------------------------------------------
+   --- Posicionamento dos links Encerrar, limpar e inicio ---
+   ---------------------------------------------------------- */
+.navigation {
+	float: right;
+	width: 200px;
+}
+
+/* ----------------------------------
+   --- Wait pane style --------------
+   ----------------------------------
+   --- Estilo do quadro de espera ---
+   ---------------------------------- */
+#waitPane {
+	z-index: 10000;
+	font: normal 14px verdana;
+	COLOR: #2244aa;
+	border: 1px solid #2244aa;
+	width: 180px;
+	padding: 5px;
+	position: fixed !important;
+	top: 35% !important;
+	left: 35% !important;
+	position: absolute;
+	display: none;
+	background-color: white;
+}
+
+/* --------------------------------------------
+   ---Classes do CI ---------------------------
+   ---Autor: Douglas M. Santos-----------------
+   ---Data: 18/12/2006-------------------------
+   -------------------------------------------- */
+
+/* ----------------------------------------
+   ----- Header columns on the tables -----
+   ----------------------------------------
+   --- Cabecalho de colunas nas tabelas ---
+   ---------------------------------------- */
+TH.ODS_header {
+	COLOR: #FFFFFF;
+	FONT: normal 10px verdana, arial, sans-serif;
+	BACKGROUND: #5692C0;
+	TEXT-ALIGN: center;
+	HEIGTH: 22px;	
+}
+
+/* --------------------------------------
+   --- Light line displayed in tables ---
+   --------------------------------------
+   --- Linha clara exibida em tabelas ---
+   -------------------------------------- */
+TR.ODS_line1 TD {
+	BACKGROUND-COLOR: #ffffff;
+	COLOR: #000000;
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 10px;
+	FONT-FAMILY: verdana, arial, sans-serif;
+	HEIGHT: 22px;
+}
+
+/* --------------------------------------
+   --- Dark line displayed in tables ----
+   --------------------------------------
+   --- Linha escura exibida em tabelas --
+   -------------------------------------- */
+TR.ODS_line2 TD {
+	background-color: #f3f2f1;
+	color: #000000;
+	font-weight: normal;
+	font-size: 10px;
+	font-family: verdana, arial, sans-serif;
+	padding: 0px;
+	HEIGHT: 22px;	
+}   
+
+TR.ODS_line11 TD {
+	COLOR: #555555;
+	font-weight: bold;
+	font-size: 11px;
+	font-family: verdana, arial, sans-serif;
+	TEXT-ALIGN: left;
+}
+
+
+table.listaPaginada {
+    border: 1px solid #666;
+	width: 80%;
+	margin: 20px 0 20px 0 !import;
+	font-size: 14px;   
+}
+
+table.listaPaginada th,td {
+	
+}
+
+table.listaPaginada thead tr {
+	COLOR: #FFFFFF;
+	FONT: normal 10px verdana, arial, sans-serif;
+	BACKGROUND-COLOR: #5692C0;
+	TEXT-ALIGN: center;
+	HEIGTH: 22px;	
+	
+}
+
+table.listaPaginada th.sorted {
+	background-color: #7eadcf;	
+}
+
+table.listaPaginada th a,th a:visited {
+	color: #FFFFFF;	
+}
+
+table.listaPaginada th a:hover {
+	TEXT-DECORATION: none;
+	color: #FFFFFF;
+	TEXT-DECORATION: none;
+}
+
+table.listaPaginada th.sorted a,th.sortable a {
+	background-position: right;
+	display: block;
+	width: 100%;
+	
+}
+
+table.listaPaginada th.sortable a {
+	background-image: url(../image/arrow_off.png);
+	BACKGROUND-REPEAT: no-repeat
+}
+
+table.listaPaginada th.order1 a {
+	background-image: url(../image/arrow_down.png);
+	BACKGROUND-REPEAT: no-repeat;
+	FONT-WEIGHT: bold;
+}
+
+table.listaPaginada th.order2 a {
+	background-image: url(../image/arrow_up.png);
+	BACKGROUND-REPEAT: no-repeat;
+	FONT-WEIGHT: bold;                   
+}
+
+table.listaPaginada tr.odd {
+	background-color: #ffffff;
+	FONT: normal 10px verdana, arial, sans-serif;
+	                  
+}
+
+table.listaPaginada tr.tableRowEven,tr.even {
+	background-color: #f3f2f1;
+	FONT: normal 10px verdana, arial, sans-serif;
+}
+
+DIV.exportlinks
+{
+    BORDER-RIGHT: #999 1px dotted;
+    PADDING-RIGHT: 4px;
+    BORDER-TOP: #999 1px dotted;
+    PADDING-LEFT: 4px;
+    PADDING-BOTTOM: 2px;
+    MARGIN: 10px 0px;
+    BORDER-LEFT: #999 1px dotted;
+    WIDTH: 100%;
+    PADDING-TOP: 2px;
+    BORDER-BOTTOM: #999 1px dotted;
+    BACKGROUND-REPEAT: no-repeat;
+    BACKGROUND-COLOR: #eee;
+    FONT: normal 11px verdana, arial, sans-serif;
+}
+SPAN.export
+{
+    PADDING-RIGHT: 4px;
+    DISPLAY: inline-block;
+    PADDING-LEFT: 20px;
+    PADDING-BOTTOM: 1px;
+    CURSOR: pointer;
+    PADDING-TOP: 0px;
+    BACKGROUND-REPEAT: no-repeat
+}
+SPAN.excel
+{
+    BACKGROUND-IMAGE: url(../image/ico_file_excel.png);
+    BACKGROUND-REPEAT: no-repeat
+}
+SPAN.pagebanner
+{
+    PADDING-RIGHT: 1px;
+    MARGIN-TOP: 10px;
+    PADDING-LEFT: 4px;
+    MARGIN-BOTTOM: -20px;
+    PADDING-BOTTOM: 2px;
+    WIDTH: 98%;
+    PADDING-TOP: 2px;
+    TEXT-ALIGN: left;
+    FONT: normal 10px verdana, arial, sans-serif;
+}
+SPAN.pagelinks
+{
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 2px;
+    MARGIN-BOTTOM: -20px;
+    PADDING-BOTTOM: 2px;
+    WIDTH: 98%;
+    COLOR: black;
+    PADDING-TOP: 2px;
+    TEXT-ALIGN: center;
+    FONT: normal 10px verdana, arial, sans-serif;
+}
+TABLE.simple TD.textRed
+{
+    COLOR: #b11
+}
+SPAN.pagelinks A:link
+{
+    COLOR: black
+}
+SPAN.pagelinks A:active
+{
+    COLOR: black
+}
+SPAN.pagelinks A:visited
+{
+    COLOR: black
+}
+SPAN.pagelinks A:hover
+{
+    COLOR: black;
+    TEXT-DECORATION: underline
+}
+
+.ODS_Line_Red {
+	background-color: red;
+	FONT: normal 10px verdana, arial, sans-serif;	                  
+}
+
+
+
+
+
+/* --------------------------------------------
+   ---Content area's Main table ---------------
+   --------------------------------------------
+   --- Tabela Principal da area de conteudo ---
+   -------------------------------------------- */
+.ODS_mainTable{
+	border-style: none;
+	padding: 0;
+	border-spacing: 0;
+	empty-cells: show;
+	width: 98vw;
+}
+
+/* -------------------------------
+   --------- Tab's space ---------
+   -------------------------------
+   --- Espaco ocupado pela aba ---
+   ------------------------------- */
+.ODS_internalWidth {
+	width: 100%;
+}
+
+/* -------------------------------
+   --------- Main Menu -----------
+   -------------------------------
+   --- Menu Principal ------------
+   ------------------------------- */
+.ODS_MainMenu
+{
+	font-family:	verdana, arial, sans-serif;
+	font-size:	13px;
+
+	padding:	0;
+
+	white-space:	nowrap;
+	cursor:		default;
+}
+
+/* ----------------------------------------------
+   --------- Main Menu itens align --------------
+   ----------------------------------------------
+   --- Alinhamento dos itens do Menu ------------
+   ---------------------------------------------- */
+.ODS_MainMenuItenAlign
+{
+	border:		0;
+	cursor:		default;
+	white-space:	nowrap;
+}
+
+/* ----------------------------------------------
+   --------- Main Menu itens --------------------
+   ----------------------------------------------
+   --- Itens do Menu principal-------------------
+   ---------------------------------------------- */
+.ODS_MainMenuItenLeft, .ODS_MainMenuItenText, 
+.ODS_MainMenuItenRight{
+	background-color:	inherit;
+}
+
+.ODS_MainMenuItenSelectedText{
+	background-color:	inherit;
+	COLOR: #0066cc;	
+}
+
+/* -------------------------------
+   ----------- Tab's -------------
+   -------------------------------
+   ------------ Abas -------------
+   ------------------------------- */
+
+/* -----------------------------------
+   ----------- Active Tab-------------
+   -----------------------------------
+   ----------- Aba ativa -------------
+   ----------------------------------- */
+.ODS_tabbedPane_activeHeaderCell{
+	border-top: 2px outset silver;
+	border-right: 2px outset silver;
+	border-bottom: 0px none;
+	border-left: 2px outset silver;
+	text-align: center;
+}
+
+.ODS_tabbedPane_activeHeaderCell input{
+	border-style: none;
+	width: 100%;
+}
+
+.ODS_tabbedPane_subHeaderCell_active{
+	border-top: 0px none;
+}
+
+/* -------------------------------------
+   ----------- Inactive Tab-------------
+   -------------------------------------
+   ----------- Aba inativa -------------
+   ------------------------------------- */
+.ODS_tabbedPane_inactiveHeaderCell{
+	border-top: 1px outset silver;
+	border-right: 1px outset silver;
+	border-bottom: 0px none;
+	border-left: 1px outset silver;
+	text-align: center;
+	background-color: silver;
+}
+
+.ODS_tabbedPane_inactiveHeaderCell input{
+	border-style: none;
+	width: 100%;
+}
+
+.ODS_tabbedPane_subHeaderCell_inactive{
+	border-top: 2px outset silver;
+}
+/* -----------------------------------
+   ----------- Empty Tab--------------
+   -----------------------------------
+   ----------- Aba vazia -------------
+   ----------------------------------- */
+.ODS_tabbedPane_emptyHeaderCell{
+	border-style: none;
+}
+
+/* ---------------------------------------
+   ----------- Sub-Header-----------------
+   ---------------------------------------
+   ----------- Sub-cabecalho -------------
+   --------------------------------------- */
+   
+.ODS_tabbedPane_subHeaderCell{
+ 	height: 2px;
+	line-height: 0;
+	font-size: 0;
+	border-bottom: 0px none;
+}
+
+/* ----------------------------------------------------------------
+   ----------- Last and First Tab's Sub-Header --------------------
+   ----------------------------------------------------------------
+   ----------- Sub-Header das abas iniciais e finais --------------
+   ---------------------------------------------------------------- */
+
+.ODS_tabbedPane_subHeaderCell_first{
+	border-left: 2px outset silver;
+}
+
+.ODS_tabbedPane_subHeaderCell_last{
+	border-top: 2px outset silver;
+	border-right: 2px outset silver;
+}
+
+/* -----------------------------
+   --- Azul Escuro Negrito CI---
+   -----------------------------
+   ----- CI Dark Blue Bold -----
+   ----------------------------- */
+.ODS_darkBlueBold {
+	color: darkblue;
+	FONT: bold 11px verdana, arial, sans-serif;
+}
+
+
+
+.ODS_gridButton { 
+	BORDER-TOP: 1px solid #858585;
+	border-right: 1px solid #BEBEBE;
+	border-bottom: 1px solid #DCDCDC;
+	BORDER-LEFT: 1px solid #BEBEBE;
+	FONT: normal 10px verdana, arial, sans-serif;
+	color:#FFFFFF; 
+	background-color:#5692C0; 
+	MARGIN: 1px;
+}
+
+/* ----------------------------
+   ------- Title H2 --------
+   ----------------------------
+   ------- Titulo H2 -------
+   ---------------------------- */
+.H2 {
+	margin-top: 0px;
+	padding-left: 5px;
+	width: 994px;
+	font-size: 18px;
+	font-family: Verdana, Arial, sans-serif;
+	font-weight: normal;
+	color: #cc0000;
+	border-bottom: 1px solid #cccccc;
+}
+
+/* ----------------------------
+   ------- CI Link --------
+   ----------------------------
+   ------- CI Link --------
+   ---------------------------- */
+
+.ODS_Link {
+	FONT: 11px Verdana, sans-serif;
+	text-decoration: underline;
+	COLOR: #003399;
+	cursor: pointer;
+}
+
+/* ------------------------------------------
+   --- Page Header - Good Morning Message ---
+   ------------------------------------------
+   ---- Cabecalho - Mensagem de Bom Dia  ----
+   ------------------------------------------ */
+.ODS_divWelcomeUser {
+	FONT: bold 8.5pt verdana;
+	COLOR: gray;
+}
+
+/* --------------------
+   --- Localization ---
+   --------------------
+   --- Localizacao ----
+   -------------------- */
+.ODS_divLocalization {
+	FONT: bold 8.5pt verdana;
+	color: gray;
+}
+
+.ODS_line {
+	color: #336699;
+	border-bottom: 1px solid #336699;
+	align:center;
+
+}
+
+TR.ODS_Detail_Line1 TD 
+{
+	BACKGROUND-COLOR: #ffffff; 
+	COLOR: #000000;
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 10px;
+	FONT-FAMILY: verdana, arial, sans-serif;
+	HEIGHT: 20px;
+}
+
+TR.ODS_Detail_Line2 TD
+{
+	BACKGROUND-COLOR: #ffffff;
+	COLOR: #000000;
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 10px;
+	FONT-FAMILY: verdana, arial, sans-serif;
+	HEIGHT: 20px;
+}
+
+TR.ODS_Detail_Line3 TD 
+{
+	COLOR: #000000;
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 10px;
+	FONT-FAMILY: verdana, arial, sans-serif;
+	HEIGHT: 20px;
+}
+
+.ODS_Sheet_Link
+{
+	COLOR: darkblue;
+	FONT: bold 11px verdana, arial, sans-serif;
+	TEXT-DECORATION: none;	
+	cursor: hand
+}
+
+.ODS_Sub_Sheet_Link
+{
+	COLOR: darkblue;
+	FONT: bold 11px verdana, arial, sans-serif;
+	TEXT-DECORATION: none;
+	cursor: hand
+	
+}
+
+/* -----------------------------
+   --- Cinza (Desabilitado)---
+   -----------------------------
+   ----- ODS Gray Bold -----
+   ----------------------------- */
+.ODS_Sheet_Link_Disabled {
+	color: #618DE0;
+	FONT: bold 11px verdana, arial, sans-serif;
+	TEXT-DECORATION: none;
+	cursor: hand;
+	
+}
+.ODS_Text_Field_Size_2
+{
+	width: 20px;
+}
+
+.ODS_Select_Field_Size_2
+{
+	width: 30px;
+}
+
+.ODS_Text_Field_Size_5
+{
+	width: 55px;
+}
+.ODS_Select_Field_Size_5
+{
+	width: 70px;
+}
+.ODS_Text_Field_Size_10
+{
+	width: 110px;
+}
+.ODS_Select_Field_Size_10
+{
+	width: 115px;
+}
+.ODS_Text_Field_Size_15
+{
+	width: 140px;
+}
+.ODS_Select_Field_Size_15
+{
+	width: 145px;
+}
+.ODS_Text_Field_Size_20
+{
+	width: 165px;
+}
+.ODS_Select_Field_Size_20
+{
+	width: 180px;
+}
+.ODS_Text_Field_Size_30
+{
+	width: 220px;
+}
+.ODS_Select_Field_Size_30
+{
+	width: 235px;
+}
+.ODS_Text_Field_Size_40
+{
+	width: 275px;
+}
+.ODS_Select_Field_Size_40
+{
+	width: 300px;
+}
+.ODS_Text_Field_Size_50
+{
+	width: 385px;
+}
+.ODS_Text_Field_Size_60
+{
+	width: 440px;
+}
+.ODS_Text_Field_Size_70
+{
+	width: 495px;
+}
+.ODS_Text_Field_Size_80
+{
+	width: 605px;
+}
+.ODS_Text_Field_Size_100
+{
+	width: 715px;
+}
+.ODS_Text_Field_Size_255
+{
+	width: 715px;
+}
+
+/* -----------------------
+   ---- Message format -----
+   -----------------------
+   ---  Css aplicado 
+	em mensagem e erros ---
+   ----------------------- */
+.ODS_Error {
+	font-size: 11px;
+	font-weight:bold;
+	font-style:italic;
+	FONT-FAMILY: verdana, arial, sans-serif;
+	color: red;
+
+	
+}
+
+.ODS_Message {
+	font-size: 11px;
+	font-weight: bold;
+	font-style:italic;
+	FONT-FAMILY: verdana, arial, sans-serif;
+	color: #1F8D18;
+
+}
+
+.ODS_Div{
+
+	width:98vw;
+	height:auto;
+	overflow: auto;
+	overflow-x: hidden;
+	/* Definicao de altura maxima - Firefox*/
+	max-height: 50px;	
+	/* Definicao de altura maxima - IE 6*/
+	_height:expression(this.offsetHeight > 50? "50px" : this.offsetHeight);
+ 
+}
+
+.ODS_DivGrid{
+	width:96vw;
+	overflow-y: hidden;
+	overflow:auto;
+	padding-bottom: 15px;
+	padding-right: 5px;
+}
+
+.ODS_DivGridVertical{
+	width:96vw;
+	height: auto;
+	overflow:auto;
+	overflow-x:hidden;
+	_height:expression(this.offsetHeight > 400? "400px" : this.offsetHeight);
+}
+
+.ODS_DivGridVerticalScroll{
+	width:96vw;
+	height: auto;
+	overflow:scroll;
+	_height:expression(this.offsetHeight > 400? "400px" : this.offsetHeight);
+	padding-right: 5px;
+	padding-bottom: 15px;
+}
+
+.ODS_BorderError{
+	width:98vw;
+	height:auto;
+	border:	1px solid #FF0000;
+}
+
+.ODS_BorderMsg{
+	border:	1px solid #1F8D18;
+	width:98vw;
+	height:auto;
+}
+
+/* -----------------------------
+   --- Padrao de Fonte Cinza---
+   -----------------------------
+   ----- ODS Gray Bold -----
+   ----------------------------- */
+.ODS_Gray_Bold  {
+	color: gray;
+	FONT: bold 11px verdana, arial, sans-serif;
+	TEXT-DECORATION: none;
+}
+
+/*---Menu selecionado ---*/
+
+.ODS_ThemeOfficeSelectedMenu
+{
+	FONT: bold 11px verdana, arial, sans-serif;
+	color: darkblue;
+	text-decoration:none;
+
+}
+
+
+.ODS_ThemeOfficeSelectedSubMenuTable
+{
+	FONT: bold 11px verdana, arial, sans-serif;
+	color: darkblue;
+
+	
+	padding:	0;
+
+	white-space:	nowrap;
+	cursor:		hand;
+}
+
+
+.ODS_ThemeOfficeSelectedSubMenu
+{
+	position:	absolute;
+	visibility:	hidden;
+	text-decoration:none;
+	/*
+	   Classes do menu principal.
+	*/
+	z-index:	100;
+	border:		0;
+	padding:	0;
+
+	overflow:	visible;
+	border:		1px solid #8C867B;
+
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#BDC3BD, Direction=135, Strength=4);
+}
+
+.ODS_ThemeOfficeSelectedSubMenuTable
+{
+	overflow:	visible;
+}
+
+.ODS_ThemeOfficeSelectedMainItem,.ODS_ThemeOfficeSelectedMainItemHover,.ODS_ThemeOfficeSelectedMainItemActive,
+.ODS_ThemeOfficeSelectedMenuItem,.ODS_ThemeOfficeSelectedMenuItemHover,.ODS_ThemeOfficeSelectedMenuItemActive
+{
+	border:		0;
+	cursor:		hand;
+	white-space:	nowrap;
+
+}
+
+.ODS_ThemeOfficeSelectedMainItem:ACTIVE
+{
+	background-color:	white;
+	color: darkgray;
+}
+
+
+.ODS_ThemeOfficeSelectedMainItemHover,.ODS_ThemeOfficeSelectedMainItemActive
+{
+	background-color:white;
+	color:darkblue;
+	FONT: bold 11px verdana, arial, sans-serif;
+}
+
+.ODS_ThemeOfficeSelectedMenuItem
+{
+	background-color:	WHITE;
+}
+
+.ODS_ThemeOfficeSelectedMenuItemHover,.ODS_ThemeOfficeSelectedMenuItemActive
+{
+	background-color:	#C6D3EF;
+}
+
+
+/* horizontal main menu */
+
+.ODS_ThemeOfficeSelectedMainItem
+{
+	padding:	1px;
+	border:		0;
+}
+
+td.ODS_ThemeOfficeSelectedMainItemHover,td.ODS_ThemeOfficeSelectedMainItemActive
+{
+	padding:	0px;
+	border:		1px solid #3169C6;
+}
+
+.ODS_ThemeOfficeSelectedMainFolderLeft,.ODS_ThemeOfficeSelectedMainItemLeft,
+.ODS_ThemeOfficeSelectedMainFolderText,.ODS_ThemeOfficeSelectedMainItemText,
+.ODS_ThemeOfficeSelectedMainFolderRight,.ODS_ThemeOfficeSelectedMainItemRight
+{
+	background-color:	inherit;
+
+}
+
+/* vertical main menu sub components */
+
+td.ODS_ThemeOfficeSelectedMainFolderLeft,td.ODS_ThemeOfficeSelectedMainItemLeft
+{
+	padding-top:	2px;
+	padding-bottom:	2px;
+	padding-left:	0px;
+	padding-right:	2px;
+
+	border-top:	1px solid #3169C6;
+	border-bottom:	1px solid #3169C6;
+	border-left:	1px solid #3169C6;
+
+	background-color:	inherit;
+}
+
+td.ODS_ThemeOfficeSelectedMainFolderText,td.ODS_ThemeOfficeSelectedMainItemText
+{
+	padding-top:	2px;
+	padding-bottom:	2px;
+	padding-left:	5px;
+	padding-right:	5px;
+
+	border-top:	1px solid #3169C6;
+	border-bottom:	1px solid #3169C6;
+
+	background-color:	inherit;
+	white-space:	nowrap;
+	td
+}
+
+td.ODS_ThemeOfficeSelectedMainFolderRight,td.ODS_ThemeOfficeSelectedMainItemRight
+{
+	padding-top:	2px;
+	padding-bottom:	2px;
+	padding-left:	0px;
+	padding-right:	0px;
+
+	border-top:	1px solid #3169C6;
+	border-bottom:	1px solid #3169C6;
+	border-right:	1px solid #3169C6;
+
+	background-color:	inherit;
+}
+
+tr.ODS_ThemeOfficeSelectedMainItem td.ODS_ThemeOfficeSelectedMainFolderLeft,
+tr.ODS_ThemeOfficeSelectedMainItem td.ODS_ThemeOfficeSelectedMainItemLeft
+{
+	padding-top:	3px;
+	padding-bottom:	3px;
+	padding-left:	1px;
+	padding-right:	2px;
+
+	white-space:	nowrap;
+
+	border:		0;
+	background-color:	inherit;
+}
+
+tr.ODS_ThemeOfficeSelectedMainItem td.ODS_ThemeOfficeSelectedMainFolderText,
+tr.ODS_ThemeOfficeSelectedMainItem td.ODS_ThemeOfficeSelectedMainItemText
+{
+	padding-top:	3px;
+	padding-bottom:	3px;
+	padding-left:	5px;
+	padding-right:	5px;
+
+	border:		0;
+	background-color:	inherit;
+}
+
+tr.ODS_ThemeOfficeSelectedMainItem td.ODS_ThemeOfficeSelectedMainItemRight,
+tr.ODS_ThemeOfficeSelectedMainItem td.ODS_ThemeOfficeSelectedMainFolderRight
+{
+	padding-top:	3px;
+	padding-bottom:	3px;
+	padding-left:	0px;
+	padding-right:	1px;
+
+	border:		0;
+	background-color:	inherit;
+}
+
+/* sub menu sub components */
+
+.ODS_ThemeOfficeSelectedMenuFolderLeft,.ODS_ThemeOfficeSelectedMenuItemLeft
+{
+	padding-top:	2px;
+	padding-bottom:	2px;
+	padding-left:	1px;
+	padding-right:	3px;
+
+	border-top:	1px solid #3169C6;
+	border-bottom:	1px solid #3169C6;
+	border-left:	1px solid #3169C6;
+
+	background-color:	inherit;
+	white-space:	nowrap;
+}
+
+.ODS_ThemeOfficeSelectedMenuFolderText,.ODS_ThemeOfficeSelectedMenuItemText
+{
+	padding-top:	2px;
+	padding-bottom:	2px;
+	padding-left:	5px;
+	padding-right:	5px;
+
+	border-top:	1px solid #3169C6;
+	border-bottom:	1px solid #3169C6;
+
+	background-color:	inherit;
+	white-space:	nowrap;
+}
+
+.ODS_ThemeOfficeSelectedMenuFolderRight,.ODS_ThemeOfficeSelectedMenuItemRight
+{
+	padding-top:	2px;
+	padding-bottom:	2px;
+	padding-left:	0px;
+	padding-right:	0px;
+
+	border-top:	1px solid #3169C6;
+	border-bottom:	1px solid #3169C6;
+	border-right:	1px solid #3169C6;
+
+	background-color:	inherit;
+	white-space:	nowrap;
+}
+
+.ODS_ThemeOfficeSelectedMenuItem .ODS_ThemeOfficeSelectedMenuFolderLeft,
+.ODS_ThemeOfficeSelectedMenuItem .ODS_ThemeOfficeSelectedMenuItemLeft
+{
+	padding-top:	3px;
+	padding-bottom:	3px;
+	padding-left:	2px;
+	padding-right:	3px;
+
+	white-space:	nowrap;
+
+	border:		0;
+	background-color:	#EFEFDE;
+}
+
+.ODS_ThemeOfficeSelectedMenuItem .ODS_ThemeOfficeSelectedMenuFolderText,
+.ODS_ThemeOfficeSelectedMenuItem .ODS_ThemeOfficeSelectedMenuItemText
+{
+	padding-top:	3px;
+	padding-bottom:	3px;
+	padding-left:	5px;
+	padding-right:	5px;
+
+	border:		0;
+	background-color:	inherit;
+}
+
+.ODS_ThemeOfficeSelectedMenuItem .ODS_ThemeOfficeSelectedMenuFolderRight,
+.ODS_ThemeOfficeSelectedMenuItem .ODS_ThemeOfficeSelectedMenuItemRight
+{
+	padding-top:	3px;
+	padding-bottom:	3px;
+	padding-left:	0px;
+	padding-right:	1px;
+
+	border:		0;
+	background-color:	inherit;
+}
+
+/* menu splits */
+
+.ODS_ThemeOfficeSelectedMenuSplit
+{
+	margin:		2px;
+	height:		1px;
+	overflow:	hidden;
+	background-color:	inherit;
+	border-top:	1px solid #C6C3BD;
+}
+
+/* image shadow animation */
+
+/*
+	seq1:	image for normal
+	seq2:	image for hover and active
+
+	To use, in the icon field, input the following:
+	<img class="seq1" src="normal.gif" /><img class="seq2" src="hover.gif" />
+*/
+
+.ODS_ThemeOfficeSelectedMenuItem img.seq1
+{
+	display:	inline;
+}
+
+.ODS_ThemeOfficeSelectedMenuItemHover seq2,
+.ODS_ThemeOfficeSelectedMenuItemActive seq2
+{
+	display:	inline;
+}
+
+.ODS_ThemeOfficeSelectedMenuItem .seq2,
+.ODS_ThemeOfficeSelectedMenuItemHover .seq1,
+.ODS_ThemeOfficeSelectedMenuItemActive .seq1
+{
+	display:	none;
+}
+
+/* Cursor Hand*/
+
+a.ODS_CursorHand{
+	cursor: hand;
+}
+
+/* --------------------------------------------
+   ---Fim das Classes do ODS -------------------
+   -------------------------------------------- */
+   
+   
+   
+   /* The Modal (background) */
+.modal {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content p{
+	font-weight: bold; 
+	font-size: 13px; 
+	font-family: verdana, arial, sans-serif; 
+	TEXT-ALIGN: left; 
+	COLOR: #555555;
+}
+
+/* The Close Button */
+.close {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 16px;
+    color: #000000;
+    text-shadow: 0 1px 0 #ffffff;
+    opacity: 0.2;
+}
+
+/* The Close Button */
+.modalButton {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    margin-top: 15px;
+}
+.modalButton:hover,
+.modalButton:focus {
+	background-color: #e2e2e2;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.borderDivCheckBox{
+	border: 1px solid #CCCCCC; 
+	padding-left: 7px; 
+	padding-top: 3px; 
+	padding-bottom: 3px; 
+}
+
+.borderDivCheckBoxTransparent{
+	border: 1px solid #ffffff; 
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:element name="XML" type="XML_TYPE"/>
+  <xs:complexType name="XML_TYPE">
+    <xs:sequence>
+      <xs:element name="RECORD_LIST" type="RECORD_LIST_TYPE" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="RECORD_LIST_TYPE">
+    <xs:sequence>
+      <xs:element name="RECORD_COUNT" type="xs:string" minOccurs="0"/>
+      <xs:element name="COLUMN_COUNT" type="xs:string" minOccurs="0"/>
+      <xs:element name="COLUMN_NAME" type="xs:string" minOccurs="0"/>
+      <xs:element name="RECORD" type="RECORD_TYPE" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="RECORD_TYPE">
+    <xs:all>
+      <xs:element name="GROUP_NAME" type="xs:string" minOccurs="0"/>
+      <xs:element name="CNPJ_NUMBER" type="xs:string" minOccurs="0"/>
+      <xs:element name="CPF_NUMBER" type="xs:string" minOccurs="0"/>
+      <xs:element name="USER_ID" type="xs:string" minOccurs="0"/>
+      <xs:element name="MODULE_ID" type="xs:string" minOccurs="0"/>
+      <xs:element name="MODULE_NAME" type="xs:string" minOccurs="0"/>
+      <xs:element name="FUNCTION_ID" type="xs:string" minOccurs="0"/>
+      <xs:element name="FUNCTION_NAME" type="xs:string" minOccurs="0"/>
+      <xs:element name="PARENT_FUNCTION_ID" type="xs:string" minOccurs="0"/>
+    </xs:all>
+  </xs:complexType>
+</xs:schema>
